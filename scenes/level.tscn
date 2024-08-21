@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs3ejht1ekc6"]
+
+[ext_resource type="Texture2D" uid="uid://c2rki5hdcbv40" path="res://graphics/other/Starry background  - Layer 01 - Void.png" id="1_6vncf"]
+[ext_resource type="PackedScene" uid="uid://2qtmv034g8qy" path="res://scenes/player.tscn" id="1_trxlf"]
+[ext_resource type="PackedScene" uid="uid://ce6liixdoyhko" path="res://scenes/meteor.tscn" id="3_tuafa"]
+
+[node name="Level" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(642, -9632)
+rotation = 1.5708
+scale = Vector2(3.60382, 3.60382)
+texture = ExtResource("1_6vncf")
+
+[node name="Player" parent="." instance=ExtResource("1_trxlf")]
+position = Vector2(108, 272)
+
+[node name="Meteor" parent="." instance=ExtResource("3_tuafa")]
+position = Vector2(385, 94)
